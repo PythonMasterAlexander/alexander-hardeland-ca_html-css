@@ -1,0 +1,20 @@
+{
+  "name": "alexander-hardeland-ca_html-css",
+  "version": "1.0.0",
+  "description": "Rebuild of CA in html & css course on Noroff front-end Development",
+  "main": "index.js",
+  "scripts": {
+    "jsdocs": "jsdoc ./src/scripts",
+    "start": "concurrently \"tsc --watch\" \"live-server\" \"sass --watch src/scss:dist/css\""
+  },
+  "keywords": [],
+  "author": "Alexander Hardeland",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "jsdoc": "^4.0.2",
+    "live-server": "^1.2.2",
+    "sass": "^1.60.0",
+    "typescript": "^5.0.3"
+  }
+}
