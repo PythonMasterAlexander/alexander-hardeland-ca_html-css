@@ -4,8 +4,8 @@
   "description": "Rebuild of CA in html & css course on Noroff front-end Development",
   "main": "index.js",
   "scripts": {
-    "jsdocs": "jsdoc ./src/scripts",
-    "start": "concurrently \"tsc --watch\" \"live-server\" \"sass --watch src/scss:dist/css\""
+    "start": "concurrently \"tsc --watch\" \"live-server\" \"sass --watch src/scss:dist/css\"",
+    "docs": "jsdoc -c ./jsdoc.json"
   },
   "keywords": [],
   "author": "Alexander Hardeland",
