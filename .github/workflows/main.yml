@@ -1,4 +1,4 @@
-# Workflow 
+# Workflow
 name: HTML&CSS Course Assignment
 
 # Where do the workflow run
@@ -7,7 +7,7 @@ on:
   push:
     # Push to main branch
     branches: ["main"]
-    
+
   # PR Request
   pull_request:
     # PR to main branch
@@ -15,5 +15,4 @@ on:
 
   # Allow you to run this workflow manually from GitHub in the Actions tab
   workflow_dispatch:
-
 # Run on which Jobs

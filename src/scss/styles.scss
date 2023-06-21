@@ -1,561 +1,590 @@
 html {
-	box-sizing: border-box;
-	background-color: var(--backgroundColor);
+  box-sizing: border-box;
+  background-color: var(--backgroundColor);
 }
 
-*, *:before, *:after {
-	box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 * {
-	border: 0;
-	margin: 0;
-	padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-	font-size: 16px;
-	--blackColor: #000;
-	--whiteColor: #fff;
-	--backgroundColor: #5CDB95;
-	--linkColor: #05386B;
-	--errorColor: #ff0000;
-	--successColor: #26bc21;
+  font-size: 16px;
+  --blackColor: #000;
+  --whiteColor: #fff;
+  --backgroundColor: #5cdb95;
+  --linkColor: #05386b;
+  --errorColor: #ff0000;
+  --successColor: #26bc21;
 }
 
 body {
-	color: var(--blackColor);
-	font: 400 1.3rem 'Roboto', sans-serif;
+  color: var(--blackColor);
+  font: 400 1.3rem "Roboto", sans-serif;
 }
 
-header, main, footer, footer section:nth-child(2) {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+header,
+main,
+footer,
+footer section:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-main section:nth-child(2) a, .main__sectionContainer--landingPageImages, .main__sectionContainer-landingPageImages__columnThree--imageTwo, 
-.divContainer__image, .main__sectionContainer-landingPageImages__columnThree--imageOne, input, textarea, .homeButton a,
+main section:nth-child(2) a,
+.main__sectionContainer--landingPageImages,
+.main__sectionContainer-landingPageImages__columnThree--imageTwo,
+.divContainer__image,
+.main__sectionContainer-landingPageImages__columnThree--imageOne,
+input,
+textarea,
+.homeButton a,
 .tourButton a {
-	display: block;
+  display: block;
 }
 
 h1 {
-	flex: 0 0 90%;
-	font-size: 2rem;
-	margin-bottom: 100px;
+  flex: 0 0 90%;
+  font-size: 2rem;
+  margin-bottom: 100px;
 }
 
 .contactPage--centerHeading {
-	text-align: center;
-	margin: 50px auto;
+  text-align: center;
+  margin: 50px auto;
 }
 
 .aboutPage__headingStyle {
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
- .routesToursPage__mainContainer h1 {
-	 margin-bottom: 30px;
- }
+.routesToursPage__mainContainer h1 {
+  margin-bottom: 30px;
+}
 
 legend {
-	font-size: 1.8rem;
-	margin: 0 auto;
+  font-size: 1.8rem;
+  margin: 0 auto;
 }
 
-h2, main h3, label {
-	font-size: 1.5rem;
-	font-weight: 400;
-	margin-bottom: 0.5rem;
+h2,
+main h3,
+label {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 
-h1, h2, main h3, .header__logoContainer a {
-	font-family: 'Arvo', 'Georgia', serif;
+h1,
+h2,
+main h3,
+.header__logoContainer a {
+  font-family: "Arvo", "Georgia", serif;
 }
 
 footer a {
-	font-weight: 600;
-	font-size: 1.3rem;
-	text-transform: lowercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-transform: lowercase;
 }
 
 a {
-	font-weight: 700;
-	font-size: 1.4rem;
-	text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 button {
-	background-color: var(--linkColor);
-	color: var(--whiteColor);
-	cursor: pointer;
-	font-size: 1.3rem;
-	padding: 20px;
+  background-color: var(--linkColor);
+  color: var(--whiteColor);
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 20px;
 }
 
 .header__logoContainer a {
-	font-size: 3.5rem;
-	text-transform: capitalize;
+  font-size: 3.5rem;
+  text-transform: capitalize;
 }
 
 .aboutPage__messageFromCompany {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 .routesToursPage__mainContainer a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer h3 {
-	font-weight: 600;
-	font-size: 1.3rem;
-	margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 section li {
-	color: var(--whiteColor);
-	line-height: 2rem;
+  color: var(--whiteColor);
+  line-height: 2rem;
 }
 
-header p, header a, main a {
-	color: var(--linkColor);
+header p,
+header a,
+main a {
+  color: var(--linkColor);
 }
 
 header a {
-	margin-right: 20px;
+  margin-right: 20px;
 }
 
 p {
-	font-size: 1.3rem;
-	line-height: 1.7rem;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
 }
 
 .routesToursPage__mainContainer div p {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 li {
-	display: inline-block;
-	padding: 0 5px 0 5px;
+  display: inline-block;
+  padding: 0 5px 0 5px;
 }
 
 section li {
-	border-right: solid var(--whiteColor) 2px;
+  border-right: solid var(--whiteColor) 2px;
 }
 
-.body__sectionContainer li:nth-child(4), .routesToursPage__mainContainer li {
-	border-right: none;
+.body__sectionContainer li:nth-child(4),
+.routesToursPage__mainContainer li {
+  border-right: none;
 }
 
 .header__covidGuidelinesSection a {
-	color: var(--blackColor);
-	font-size: 1rem;
+  color: var(--blackColor);
+  font-size: 1rem;
 }
 
 .body__sectionContainer h3 {
-	color: var(--whiteColor);
-	margin-bottom: 10px;
+  color: var(--whiteColor);
+  margin-bottom: 10px;
 }
 
 img {
-	color: var(--linkColor);
-	height: 20px;
-	width: 20px;
+  color: var(--linkColor);
+  height: 20px;
+  width: 20px;
 }
 
 .main__sectionContainer--landingPageImages {
-	height: 400px;
-	width: 300px;
+  height: 400px;
+  width: 300px;
 }
 
 .main__sectionContainer-landingPageImages__columnThree--imageOne {
-	height: 400px;
-	width: 500px;
+  height: 400px;
+  width: 500px;
 }
 
 .main__sectionContainer-landingPageImages__columnThree--imageTwo {
-	height: 400px;
-	width: 300px;
+  height: 400px;
+  width: 300px;
 }
 
 .standAlone--image {
-	height: 500px;
-	width: 400px;
+  height: 500px;
+  width: 400px;
 }
 
 .divContainer__image {
-	height: 800px;
-	margin: 150px auto;
-	width: 900px;
+  height: 800px;
+  margin: 150px auto;
+  width: 900px;
 }
 
 header section img {
-	height: 25px;
-	width: 25px;
+  height: 25px;
+  width: 25px;
 }
 
 footer img {
-	width: 25px;
-	height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 header {
-	height: 150px;
-	justify-content: left;
-	max-width: 85%;
-	margin: 0 auto;
+  height: 150px;
+  justify-content: left;
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .header__covidGuidelinesSection {
-	flex: 0 0 100%;
-	height: 30px;
-	text-align: center;
-	margin: 25px 0; 
+  flex: 0 0 100%;
+  height: 30px;
+  text-align: center;
+  margin: 25px 0;
 }
 
-header nav, header section:nth-child(4) {
-	align-self: center;
+header nav,
+header section:nth-child(4) {
+  align-self: center;
 }
 
 nav {
-	margin-left: 5%;
+  margin-left: 5%;
 }
 
 main {
-	margin: 100px auto;
-	max-width: 85%;
+  margin: 100px auto;
+  max-width: 85%;
 }
 
 article {
-	max-width: 1040px;
+  max-width: 1040px;
 }
 
 main section {
-	max-width: 600px;
+  max-width: 600px;
 }
 
 .routesToursPage__mainContainer section {
-	max-width: none;
+  max-width: none;
 }
 
-main section:nth-child(2), main section:last-child {
-	height: fit-content;
+main section:nth-child(2),
+main section:last-child {
+  height: fit-content;
 }
 
 .contactPage--mainContainer {
-	background-color: var(--whiteColor);
-	margin: 50px auto;
-	max-width: 70%;
-	padding-bottom: 70px;
+  background-color: var(--whiteColor);
+  margin: 50px auto;
+  max-width: 70%;
+  padding-bottom: 70px;
 }
 
 .routesToursPage__mainContainer {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .body__sectionContainer {
-	background-color: var(--linkColor);
-	text-align: center;
-	padding: 30px 0;
+  background-color: var(--linkColor);
+  text-align: center;
+  padding: 30px 0;
 }
 
 #iframe {
-	width: 700px;
-	height: 600px;
+  width: 700px;
+  height: 600px;
 }
 
 footer {
-	align-items: center;
-	color: var(--blackColor);
-	height: 250px;
+  align-items: center;
+  color: var(--blackColor);
+  height: 250px;
 }
 
 footer section:nth-child(2) {
-	width: 200px;
+  width: 200px;
 }
 
 main section:nth-child(2) {
-	background-color: var(--whiteColor);
-	border-radius: 2px;
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
-	padding: 20px;
+  background-color: var(--whiteColor);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
 }
 
 form {
-	width: 800px;
+  width: 800px;
 }
 
 fieldset {
-	padding: 25px 80px;
-	border-radius: 5px;
-	border: solid var(--blackColor) 2px;
+  padding: 25px 80px;
+  border-radius: 5px;
+  border: solid var(--blackColor) 2px;
 }
 
 fieldset div {
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 label {
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 input {
-	height: 50px;
-	width: 420px;
+  height: 50px;
+  width: 420px;
 }
 
 textarea {
-	height: 300px;
-	width: 100%;
-	padding-top: 5px;
+  height: 300px;
+  width: 100%;
+  padding-top: 5px;
 }
 
-input, textarea {
-	border: solid var(--blackColor) 2px;
-	border-radius: 5px;
-	padding-left: 8px;
-	outline: 0;
+input,
+textarea {
+  border: solid var(--blackColor) 2px;
+  border-radius: 5px;
+  padding-left: 8px;
+  outline: 0;
 }
 
-input:hover, textarea:hover {
-	border: solid #b2b2b2 2px;
+input:hover,
+textarea:hover {
+  border: solid #b2b2b2 2px;
 }
 
 a:link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .activeLink {
-	box-sizing: content-box;
-	border-radius: 2px;
-	padding: 10px;
-	background-color: var(--whiteColor);
+  box-sizing: content-box;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: var(--whiteColor);
 }
 
 .button {
-	border-radius: 2px;
-	background-color: var(--linkColor);
-	text-align: center;
-	width: 300px;
+  border-radius: 2px;
+  background-color: var(--linkColor);
+  text-align: center;
+  width: 300px;
 }
 
 .button a {
-	color: var(--whiteColor);
-	font-size: 1.8rem;
-	padding: 20px;
+  color: var(--whiteColor);
+  font-size: 1.8rem;
+  padding: 20px;
 }
 
-.readButton a, .homeButton a {
-	font-size: 1.3rem;
-	padding: 10px;
+.readButton a,
+.homeButton a {
+  font-size: 1.3rem;
+  padding: 10px;
 }
 
 .readButton {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 .tourButton {
-	margin: 25px 0;
+  margin: 25px 0;
 }
 
 .tourButton a {
-	padding: 15px;
+  padding: 15px;
 }
 
 .contactPageSubmitButtonContainer {
-	width: 100%;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .inputFieldErrorImage {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
 .inputFieldErrorMessage {
-	color: var(--errorColor);
-	display: inline-block;
-	margin-top: 10px;
+  color: var(--errorColor);
+  display: inline-block;
+  margin-top: 10px;
 }
 @media only screen and (max-width: 1400px) {
   .header__logoContainer a {
-		font-size: 2.5rem;
-	}
+    font-size: 2.5rem;
+  }
 
-	nav a {
-		font-size: 1.2rem;
-	}
+  nav a {
+    font-size: 1.2rem;
+  }
 
-	h1 {
-		font-size: 1.8rem;
-	}
+  h1 {
+    font-size: 1.8rem;
+  }
 
-	legend {
-		font-size: 1.5rem;
-	}
+  legend {
+    font-size: 1.5rem;
+  }
 
-	.divContainer__image {
-		height: 500px;
-		width: 500px;
-	}
+  .divContainer__image {
+    height: 500px;
+    width: 500px;
+  }
 
-	main section:nth-child(2), main section:nth-child(3) {
-		padding: 20px;
-	}
+  main section:nth-child(2),
+  main section:nth-child(3) {
+    padding: 20px;
+  }
 
-	.contactPage--mainContainer {
-		max-width: fit-content;
-	}
+  .contactPage--mainContainer {
+    max-width: fit-content;
+  }
 
-	iframe {
-		margin: 0 auto;
-	}
+  iframe {
+    margin: 0 auto;
+  }
 
-	footer {
-		flex-direction: column;
-		text-align: center;
-	}
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 
-	.routesToursPage__mainContainer {
-		flex-direction: column;
-	}
+  .routesToursPage__mainContainer {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-	h1 {
-		font-size: 1.5rem;
-	}
+  h1 {
+    font-size: 1.5rem;
+  }
 
-	h1, h2 {
-		text-align: center;
-	}
+  h1,
+  h2 {
+    text-align: center;
+  }
 
-	p {
-		font-size: 1rem;
-	}
+  p {
+    font-size: 1rem;
+  }
 
-	label {
-		font-size: 1rem;
-	}
+  label {
+    font-size: 1rem;
+  }
 
-	.routesToursPage__mainContainer h2 {
-		font-size: 1.2rem;
-		text-align: left;
-	}
+  .routesToursPage__mainContainer h2 {
+    font-size: 1.2rem;
+    text-align: left;
+  }
 
-	.routesToursPage__mainContainer a {
-		font-size: 1rem;
-	}
+  .routesToursPage__mainContainer a {
+    font-size: 1rem;
+  }
 
-	.button {
-		margin: 20px auto;
-	}
+  .button {
+    margin: 20px auto;
+  }
 
-	header {
-		justify-content: center;
-		height: fit-content;
-		gap: 20px;
-	}
+  header {
+    justify-content: center;
+    height: fit-content;
+    gap: 20px;
+  }
 
-	#iframe {
-		width: 300px;
-		margin-top: 50px;
-		height: 400px;
-	}
+  #iframe {
+    width: 300px;
+    margin-top: 50px;
+    height: 400px;
+  }
 
-	nav a {
-		font-size: 1rem;
-	}
+  nav a {
+    font-size: 1rem;
+  }
 
-	fieldset {
-		border: 0;
-	}
+  fieldset {
+    border: 0;
+  }
 
-	input {
-		height: 30px;
-		width: fit-content;
-	}
+  input {
+    height: 30px;
+    width: fit-content;
+  }
 
-	footer h3, footer a {
-		font-weight: 400;
-		font-size: 1rem;
-	}
+  footer h3,
+  footer a {
+    font-weight: 400;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-	h1 {
-		font-size: 1.2rem;
-		margin-bottom: 50px;
-	}
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
 
-	.routesToursPage__mainContainer h2 {
-		font-size: 0.8rem;
-	}
+  .routesToursPage__mainContainer h2 {
+    font-size: 0.8rem;
+  }
 
-	.routesToursPage__mainContainer a {
-		font-size: 0.7rem;
-	}
+  .routesToursPage__mainContainer a {
+    font-size: 0.7rem;
+  }
 
-	header {
-		flex-direction: column;
-	}
+  header {
+    flex-direction: column;
+  }
 
-	.header__logoContainer {
-		margin-top: 50px;
-	}
+  .header__logoContainer {
+    margin-top: 50px;
+  }
 
-	.header__logoContainer a {
-		font-size: 1.8rem;
-	}
+  .header__logoContainer a {
+    font-size: 1.8rem;
+  }
 
-	nav {
-		align-self: baseline !important; 
-		margin-left: 0;
-	}
+  nav {
+    align-self: baseline !important;
+    margin-left: 0;
+  }
 
-	nav a {
-		font-size: 0.7rem;
-		display: block;
-		margin-bottom: 10px;
-	}
+  nav a {
+    font-size: 0.7rem;
+    display: block;
+    margin-bottom: 10px;
+  }
 
-	main section:nth-child(3), .body__imageContainer, .header__covidGuidelinesSection {
-		display: none;
-	}
+  main section:nth-child(3),
+  .body__imageContainer,
+  .header__covidGuidelinesSection {
+    display: none;
+  }
 
-	.routesToursPage__mainContainer section:nth-child(2) {
-		max-width: fit-content;
-	}
+  .routesToursPage__mainContainer section:nth-child(2) {
+    max-width: fit-content;
+  }
 
-	.button a {
-		font-size: 1.3rem;
-	}
+  .button a {
+    font-size: 1.3rem;
+  }
 
-	.body__sectionContainer h3 {
-		font-size: 1rem;
-	}
+  .body__sectionContainer h3 {
+    font-size: 1rem;
+  }
 
-	.body__sectionContainer li {
-		font-size: 0.8rem;
-	}
+  .body__sectionContainer li {
+    font-size: 0.8rem;
+  }
 
-	footer {
-		margin-top: 100px;
-		height: fit-content;
-		gap: 50px;
-	}
+  footer {
+    margin-top: 100px;
+    height: fit-content;
+    gap: 50px;
+  }
 
-	footer h3 {
-		max-width: 150px;
-	}
+  footer h3 {
+    max-width: 150px;
+  }
 
-	footer li {
-		display: block;
-	}
+  footer li {
+    display: block;
+  }
 
-	footer ul {
-		margin-bottom: 50px;
-	}
+  footer ul {
+    margin-bottom: 50px;
+  }
 }
