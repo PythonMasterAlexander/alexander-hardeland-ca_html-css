@@ -1,18 +1,22 @@
-import { formContainer, fullNameErrorMessage, formInputFields, validBorderColor, invalidBorderColor } 
-from "./component/components.js";
+import {
+  formContainer,
+  fullNameErrorMessage,
+  formInputFields,
+  validBorderColor,
+  invalidBorderColor,
+} from "./component/components.js";
 import { validateForm } from "./functions.js";
 
-const inputContainers = document.querySelectorAll('.inputContainer');
+const inputContainers = document.querySelectorAll(".inputContainer");
 
-Array.from(inputContainers).forEach(item => {
-
-  const errorContainers = document.createElement('div');
+Array.from(inputContainers).forEach((item) => {
+  const errorContainers = document.createElement("div");
   item.append(errorContainers);
 });
 
-Array.from(formInputFields).forEach(item => {
+Array.from(formInputFields).forEach((item) => {
   console.log(item);
-  item.addEventListener('keyup', function(event) {
+  item.addEventListener("keyup", function (event) {
     console.log(event.target.value.length);
   });
 });
@@ -26,7 +30,6 @@ errorTextMessage.classList.add('inputFieldErrorMessage');
 imgHtmlElement.src = "/images/form-error-symbol.svg";
 errorTextMessage.textContent = fullNameErrorMessage; 
 */
-
 
 /*
 Array.from(formInputFields).forEach(function(input) {
@@ -45,5 +48,4 @@ Array.from(formInputFields).forEach(function(input) {
 });
 */
 
-
-formContainer.addEventListener('submit', validateForm);
+formContainer.addEventListener("submit", validateForm);

@@ -6,8 +6,6 @@ import { validBorderColor } from "./component/components.js";
 import { errorMessage } from "./component/components.js";
 */
 
-
-
 //Create a message for the user if input fields dont receive the right information
 /*NB
   Why use innerHTML with stringLiterals? 
@@ -60,7 +58,7 @@ export const inputFieldError = function(event) {
 };
 */
 
-//Create a form validation function 
-export const validateForm = function(event) {
+//Create a form validation function
+export const validateForm = function (event) {
   event.preventDefault();
 };
