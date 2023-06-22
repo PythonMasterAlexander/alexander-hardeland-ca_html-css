@@ -1,2 +1,2 @@
-const testVariable: number = 55;
+const testVariable = 55;
 console.log(testVariable);

@@ -7,17 +7,25 @@
     "start": "concurrently \"tsc --watch\" \"live-server\" \"sass --watch src/scss:dist/css\"",
     "docs": "jsdoc -c ./jsdoc.json",
     "check-format": "npx prettier -c ./src/*",
-    "format": "npx prettier -w ./src/*"
+    "format": "npx prettier -w ./src/*",
+    "lint": "eslint ./src/scripts/*",
+    "lint-fix": "eslint ./src/scripts/* --cache --fix"
   },
   "keywords": [],
   "author": "Alexander Hardeland",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
     "concurrently": "^8.0.1",
+    "eslint": "^8.43.0",
     "jsdoc": "^4.0.2",
     "live-server": "^1.2.2",
     "prettier": "^2.8.8",
     "sass": "^1.60.0",
     "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
   }
 }
