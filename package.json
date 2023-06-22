@@ -6,8 +6,8 @@
   "scripts": {
     "start": "concurrently \"tsc --watch\" \"live-server\" \"sass --watch src/scss:dist/css\"",
     "docs": "jsdoc -c ./jsdoc.json",
-    "check-format": "npx prettier -c .",
-    "run-format": "npx prettier -w ."
+    "check-format": "npx prettier -c ./src/*",
+    "format": "npx prettier -w ./src/*"
   },
   "keywords": [],
   "author": "Alexander Hardeland",
