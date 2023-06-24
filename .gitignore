@@ -6,3 +6,5 @@ node_modules
 dist
 # Ignore jsdocs out folder
 docs
+# Ignore eslintcache file
+.eslintcache
